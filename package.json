@@ -1,0 +1,11 @@
+{
+  "name": "is-order-a-rabbit-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^2.14.1",
+    "fastify-caching": "^5.0.0",
+    "fastify-compress": "^2.0.1"
+  }
+}

@@ -1,0 +1,178 @@
+{
+    "Coffee": [
+        {
+            "name": {
+                "en": "Original Blend"
+            },
+            "price": {
+                "yen": 400
+            }
+        }, {
+            "name": {
+                "en": "America Blend"
+            },
+            "price": {
+                "yen": 400
+            }
+        }, {
+            "name": {
+                "en": "Iced Coffee"
+            },
+            "price": {
+                "yen": 400
+            }
+        }, {
+            "name": {
+                "en": "Hills Coffee"
+            },
+            "price": {
+                "yen": 450
+            }
+        }, {
+            "name": {
+                "en": "Dutch Coffee"
+            },
+            "price": {
+                "yen": 450
+            }
+        }
+    ],
+    "Straight Coffee": [
+        {
+            "name": {
+                "en": "Blue Mountain"
+            },
+            "price": {
+                "yen": 500
+            }
+        }, {
+            "name": {
+                "en": "Guetemuala Antigua"
+            },
+            "price": {
+                "yen": 450
+            }
+        }, {
+            "name": {
+                "en": "Brazil Santos"
+            },
+            "price": {
+                "yen": 450
+            }
+        }, {
+            "name": {
+                "en": "Mocha Matari"
+            },
+            "price": {
+                "yen": 500
+            }
+        }, {
+            "name": {
+                "en": "Columbia Supremo"
+            },
+            "price": {
+                "yen": 450
+            }
+        }, {
+            "name": {
+                "en": "Mandheling Kalosi"
+            },
+            "price": {
+                "yen": 500
+            }
+        } 
+    ],
+    "Arrange Coffee": [
+        {
+            "name": {
+                "en": "Cafe Au Lait"
+            },
+            "price": {
+                "yen": 420
+            }
+        }, {
+            "name": {
+                "en": "Cafe' Latte"
+            },
+            "price": {
+                "yen": 420
+            }
+        }, {
+            "name": {
+                "en": "Veinnese"
+            },
+            "price": {
+                "yen": 450
+            }
+        }, {
+            "name": {
+                "en": "Cappuccino"
+            },
+            "price": {
+                "yen": 500
+            }
+        }, {
+            "name": {
+                "en": "Mochaccino"
+            },
+            "price": {
+                "yen": 500
+            }
+        }
+    ],
+    "Other Drink": [
+        {
+            "name": {
+                "en": "Japanese Tea"
+            },
+            "price": {
+                "yen": 400
+            }
+        }, {
+            "name": {
+                "en": "Lemon Tea"
+            },
+            "price": {
+                "yen": 400
+            }
+        }, {
+            "name": {
+                "en": "Milk Tea"
+            },
+            "price": {
+                "yen": 400
+            }
+        }
+    ],
+    "Food": [
+        {
+            "name": {
+                "en": "Sandwich"
+            },
+            "price": {
+                "yen": 700
+            }
+        }, {
+            "name": {
+                "en": "Naporitan"
+            },
+            "price": {
+                "yen": 650
+            }
+        }, {
+            "name": {
+                "en": "Pancake"
+            },
+            "price": {
+                "yen": 600
+            }
+        }, {
+            "name": {
+                "en": "Cake"
+            },
+            "price": {
+                "yen": 500
+            }
+        }
+    ]
+}
