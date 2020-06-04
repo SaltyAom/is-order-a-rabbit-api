@@ -3,14 +3,22 @@
     "builds": [
         {
             "src": "index.js",
-            "use": "@now/node"
+            "use": "@now/node-server"
         }
     ],
     "routes": [
         {
             "src": "/.*",
-            "headers": { "cache-control": "public, maxage=86400" },
-            "dest": "/index.js"
+            "dest": "index.js",
+            "headers": { 
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET",
+                "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept",
+                "cache-control": "public, max-age=86400",
+                "Accept-Encoding": "br",
+                "Service-Worker-Allowed": "/",
+                "Vary": "Accept-Encoding"
+            } 
         }
     ]
 }
