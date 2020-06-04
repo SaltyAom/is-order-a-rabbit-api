@@ -6,6 +6,13 @@
   "dependencies": {
     "fastify": "^2.14.1",
     "fastify-caching": "^5.0.0",
-    "fastify-compress": "^2.0.1"
+    "fastify-compress": "^2.0.1",
+    "fastify-cors": "^3.0.3"
+  },
+  "scripts": {
+    "test": "jest --forceExit"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
   }
 }

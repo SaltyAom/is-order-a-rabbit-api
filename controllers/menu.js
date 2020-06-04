@@ -1,21 +1,23 @@
 const menu = require("../order.json"),
     menuType = Object.keys(menu)
 
-const { returnSucess, returnError } = require('../services/common')
+const { returnSuccess, returnError } = require('../services/common')
 
 const menuController = (app, _, done) => {
-    app.get("/", async _ => menu)
+    app.get("/", async (_, reply) => { 
+        returnSuccess(menu, reply)
+    })
 
-    app.get("/:type", (request, reply) => {
+    app.get("/:type", async (request, reply) => {
         const type = request.params.type
 
         if(menuType.includes(type))
-            return returnSucess(menu[type], reply)
+            return returnSuccess(menu[type], reply)
 
         returnError(reply)
     })
 
-    app.get("/:type/:name", (request, reply) => {
+    app.get("/:type/:name", async (request, reply) => {
         const { type, name } = request.params
 
         if(!menuType.includes(type))
@@ -27,7 +29,7 @@ const menuController = (app, _, done) => {
 
         const requestedMenu = menuNameList.indexOf(name)
 
-        returnSucess(menu[type][requestedMenu], reply)
+        returnSuccess(menu[type][requestedMenu], reply)
     })
 
     done()

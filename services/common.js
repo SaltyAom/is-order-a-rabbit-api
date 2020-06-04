@@ -1,22 +1,23 @@
-const returnSucess = (data, reply) => {
-    reply.send(
-        JSON.parse(`{
-            "success": true,
-            "info": null,
-            "data": ${JSON.stringify(data)}
-        }`)
-    )
+const returnSuccess = (data, reply) => {
+    reply.send(returnSuccessClient(data))
 }
 
+const returnSuccessClient = (data) => JSON.parse(`{
+    "success": true,
+    "info": null,
+    "data": ${JSON.stringify(data)}
+}`)
+
 const returnError = (reply, errorMessage = "Menu not Found") => {
-    reply.send(
-        JSON.parse(`{
-            "success": false,
-            "info": "${errorMessage}",
-            "data": null
-        }`)
-    )
+    reply.send(returnErrorClient(errorMessage))
 }
+
+const returnErrorClient = (errorMessage = "Menu not Found") => JSON.parse(`{
+    "success": false,
+    "info": "${errorMessage}",
+    "data": null
+}`)
+
 
 const run = async (app) => {
     try {
@@ -29,7 +30,9 @@ const run = async (app) => {
 }
 
 module.exports = {
-    returnSucess,
+    returnSuccess,
+    returnSuccessClient,
     returnError,
+    returnErrorClient,
     run
 }
